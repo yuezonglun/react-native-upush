@@ -70,6 +70,7 @@ public class MainApplication extends Application implements ReactApplication {
 
 # API调用
 |API|Note|
+------------- | -------------
 |getDeviceToken	|获取DeviceToken|
 |onReceiveListener|接收到推送消息回调的方法|
 |onOpenListener	|点击推送消息打开应用回调的方法|
