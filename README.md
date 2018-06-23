@@ -69,10 +69,10 @@ public class MainApplication extends Application implements ReactApplication {
 注：如果是android6.0以上的api编译，需要在pushsdk的build.gradle文件的android{}块内添加useLibrary 'org.apache.http.legacy'。
 
 # API调用
-|API	|Note
-|getDeviceToken	|获取DeviceToken
-|onReceiveListener	|接收到推送消息回调的方法
-|onOpenListener	|点击推送消息打开应用回调的方法
+|API|Note|
+|getDeviceToken	|获取DeviceToken|
+|onReceiveListener|接收到推送消息回调的方法|
+|onOpenListener	|点击推送消息打开应用回调的方法|
 
 # Usage
 ```
