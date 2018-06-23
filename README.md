@@ -62,11 +62,12 @@ public class MainApplication extends Application implements ReactApplication {
 }
 ```
 ## 3、常见问题
- 1、[android获取不到deviceToken问题？](http://bbs.umeng.com/thread-5547-1-1.html)
+ 1、[android获取不到deviceToken问题？](http://bbs.umeng.com/thread-5547-1-1.html)<br/>
  2、[设备不在状态、离线问题或pushservice服务问题？](http://bbs.umeng.com/thread-14055-1-1.html)
 
 ## 4、其它
-注：如果是android6.0以上的api编译，需要在pushsdk的build.gradle文件的android{}块内添加useLibrary 'org.apache.http.legacy'。
+注：如果是android6.0以上的api编译，需要在pushsdk的build.gradle文件的android{}块内添加<br/>
+useLibrary 'org.apache.http.legacy'。
 
 # API调用
 |API|Note|
@@ -107,5 +108,10 @@ export default class App extends Component {
 
 # 特此鸣谢
  [liuchungui/react-native-umeng-push](https://github.com/liuchungui/react-native-umeng-push)
+ 
+# other
+* 欢迎大家Pull Request
+* 有什么疑问，欢迎提问题
+* 觉得好的，来一个star
 
       
