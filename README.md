@@ -1,36 +1,11 @@
 # react-native-upush
 近期由于产品需求，需要在react-native项目上集成友盟推送，笔者翻阅各种这方面资料后，看到RN论坛上面有位大神给出了具体的集成方案，请参考：[react-native-umeng-push](https://github.com/liuchungui/react-native-umeng-push)。
-不过笔者测试后发现ios很是顺畅，能够正常接收到消息，但是android却各种不行，官网查询的结果是“无状态”或者“离线”，各种尝试后终于没能成功。无奈之下将友盟的sdk升级到最新的4.0版本，最后终于可以收到推送了。
+不过笔者测试后发现ios很是顺畅，能够正常接收到消息，但是android却各种不行，官网查询的结果是“无状态”或者“离线”，各种尝试后终于没能成功。无奈之下将友盟的sdk升级到最新的4.0版本，最后终于可以收到推送了。不过目前只针对android进行了集成，ios这边不熟悉语言，以后会抽空补上。
 # 安装
 ```
 npm install react-native-upush
 react-native link
 ```
-# ios集成
-在Appdelegate.m中对应的位置添加如下三个API：
-```
-#import "RCTUmengPush.h"
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-  //注册友盟推送
-  [RCTUmengPush registerWithAppkey:@"your app key" launchOptions:launchOptions];
-}
-
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
-{
-  //获取deviceToken
-  [RCTUmengPush application:application didRegisterDeviceToken:deviceToken];
-}
-
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-{
-  //获取远程推送消息
-  [RCTUmengPush application:application didReceiveRemoteNotification:userInfo];
-}
-```
-参考： https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html#//apple_ref/doc/uid/TP40012582-CH26-SW6
-启用推送设置 Enabling Push Notifications（否则会报 iOS device_token 无效）
 
 # Android集成
 注意：笔者是针对友盟sdk4.0的集成教程，pushsdk 2.8版本传送门：[react-native-umeng-push](https://github.com/liuchungui/react-native-umeng-push)。
