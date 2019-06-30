@@ -6,7 +6,7 @@ import React, {
     Platform,
 } from 'react-native';
 
-const UPushModule = NativeModules.UPush;
+const UPushModule = NativeModules.UmengPush;
 
 
 export default UPush = {
