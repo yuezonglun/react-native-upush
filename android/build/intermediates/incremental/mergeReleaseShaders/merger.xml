@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/apple/workdir/react/extra/liuyun/android/upush/src/main/shaders"/></dataSet><dataSet config="release"><source path="/Users/apple/workdir/react/extra/liuyun/android/upush/src/release/shaders"/></dataSet></merger>
